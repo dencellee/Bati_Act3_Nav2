@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Navigation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 5px;
+            width: 180px;
+        }
+
+        nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 180px;
+            background-color: #171717;
+            border-radius: 3px;
+        }
+
+        nav a {
+            display: block;
+            color: #f0efef;
+            padding: 8px 16px;
+            padding-left: 20px;
+            text-decoration: none;
+        }
+
+        nav a {
+            border-bottom: 1px solid #555;
+          }
+          
+        nav :last-child {
+            border-bottom: none;
+          }
+        nav a:hover{
+          background-color: #34bcc3;
+          color: white;
+        }
+
+        .active{
+            background-color: #34bcc3; 
+        }
+        .sub-menu {
+            display: none;
+        }
+
+        .active:hover .sub-menu {
+            display: block;
+            width: 180px;
+            background-color: #171717;
+            border-radius: 3px;
+            position: absolute;
+            width: 180px;
+            left: 187px;
+            top: 40px;
+               
+        }
+        li{
+            border-bottom: 1px solid #555;
+          }
+          
+        li :last-child {
+            border-bottom: none;
+          }
+        .sub-menu a:hover {
+            background-color: #34bcc3;
+            color: white;
+        }
+        .sub2{
+            display: none;
+        }
+        .sub-menu:hover .sub2 {
+            display: block;
+            width: 180px;
+            background-color: #171717;
+            border-radius: 3px;
+            position: absolute;
+            left: 183px;
+            top: 0px;
+               
+        }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#">Home</a>
+    <div class="active">
+        <a href="#">Product <i id="icon"; class='bx bxs-right-arrow' style="padding-left: 80px; font-size: 10px;"></i></a>
+        <div class="sub-menu">
+           <li><a href="#">Product 1 <i id="icon"; class='bx bxs-right-arrow' style="padding-left: 65px; font-size: 8px;"></i></a></li>
+           <div class="sub2">
+            <li><a href="#">SUB PRODUCT</a></li>
+            <li><a href="#">SUB PRODUCT</a></li>
+           </div>
+           <li><a href="#">Product 2 <i id="icon"; class='bx bxs-right-arrow' style="padding-left: 65px; font-size: 8px;"></i></a></li>
+        </div>
+    </div>
+    <a href="#">Contact</a>
+    <a href="#">About</a>
+</nav>
+
+</body>
+</html>
